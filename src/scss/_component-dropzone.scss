@@ -67,7 +67,7 @@
       color: $dropzone-success-color;
       span {
         &:before {
-          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$dropzone-success-color}' d='#{$dropzone-svg-icon}'/%3E%3C/svg%3E");
+          background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$dropzone-success-color}' d='#{$dropzone-svg-icon}'/></svg>");
         }
       }
     }
@@ -87,7 +87,7 @@
         width: $dropzone-svg-icon-size;
         height: $dropzone-svg-icon-size;
         content: "";
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$dropzone-primary-color}' d='#{$dropzone-svg-icon}'/%3E%3C/svg%3E");
+        background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$dropzone-primary-color}' d='#{$dropzone-svg-icon}'/></svg>");
         background-size: $dropzone-svg-icon-size $dropzone-svg-icon-size;
         background-position: center center;
         background-repeat: no-repeat;
@@ -144,7 +144,7 @@
       left: 0;
       min-width: 100%;
       max-width: 100%;
-      height: 100%;
+      height: auto;
       padding: .5rem;
       font-size: $dropzone-font-size-xs;
       text-align: center;
