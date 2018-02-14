@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.3
+
+* Upgraded to Bootstrap 4.0.0
+
 ## 1.0.2
 
 * Fixed height issue (#1)

@@ -1,9 +1,9 @@
-$dropzone-primary-color:          $brand-primary;
-$dropzone-success-color:          $brand-success;
-$dropzone-error-color:            $brand-danger;
+$dropzone-primary-color:          $primary;
+$dropzone-success-color:          $success;
+$dropzone-error-color:            $danger;
 
 $dropzone-font-size-sm:           $font-size-sm;
-$dropzone-font-size-xs:           $font-size-xs;
+$dropzone-font-size-xs:           $font-size-sm - .125;
 
 $dropzone-border-radius:          $border-radius;
 $dropzone-border-radius-sm:       $border-radius-sm;

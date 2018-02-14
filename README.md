@@ -6,10 +6,10 @@ The *Bootstrap4C Dropzone* is a simple Bootstrap 4 stylesheet component for the 
 
 See demo here => https://haubek.github.io
 
-### Bower install
+### NPM install
 
 ```
-bower install bootstrap4c-dropzone
+npm install bootstrap4c-dropzone
 ```
 
 ### CSS
