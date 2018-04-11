@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Example</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dist/css/component-dropzone.css" rel="stylesheet">
+</head>
+<body class="h-100">
+  <div class="container h-100">
+    <div class="d-flex align-items-start flex-column h-100">
+      <div class="w-100 m-auto py-5">
+
+<div id="dropzone" class="dropzone"></div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="node_modules/dropzone/dist/dropzone.js"></script>
+  <script type="text/javascript">
+    Dropzone.autoDiscover = false;
+    jQuery(document).ready(function() {
+      $("#dropzone").dropzone({
+        url: "/file/post",
+        dictDefaultMessage: "Drop files here or<br>click to upload..."
+      });
+    });
+  </script>
+</body>
+</html>
