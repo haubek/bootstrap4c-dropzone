@@ -72,6 +72,28 @@
       }
     }
   }
+  &.is-valid {
+    border-color: $dropzone-success-color;
+    .dz-message {
+      color: $dropzone-success-color;
+      span {
+        &:before {
+          background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$dropzone-success-color}' d='#{$dropzone-svg-icon-success}'/></svg>");
+        }
+      }
+    }
+  }
+  &.is-invalid {
+    border-color: $dropzone-error-color;
+    .dz-message {
+      color: $dropzone-error-color;
+      span {
+        &:before {
+          background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$dropzone-error-color}' d='#{$dropzone-svg-icon-error}'/></svg>");
+        }
+      }
+    }
+  }
   .dz-message {
     margin-top: 2.25rem;
     font-size: $dropzone-font-size-sm;
@@ -302,6 +324,34 @@
         border-left: .5rem solid transparent;
         border-right: .5rem solid transparent;
         border-bottom: .5rem solid $dropzone-error-color;
+      }
+    }
+  }
+}
+
+// Support for legacy v4 alpha versions
+.has-success {
+  .dropzone {
+    border-color: $dropzone-success-color;
+    .dz-message {
+      color: $dropzone-success-color;
+      span {
+        &:before {
+          background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$dropzone-success-color}' d='#{$dropzone-svg-icon-success}'/></svg>");
+        }
+      }
+    }
+  }
+}
+.has-danger {
+  .dropzone {
+    border-color: $dropzone-error-color;
+    .dz-message {
+      color: $dropzone-error-color;
+      span {
+        &:before {
+          background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='#{$dropzone-error-color}' d='#{$dropzone-svg-icon-error}'/></svg>");
+        }
       }
     }
   }

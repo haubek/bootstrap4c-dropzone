@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Example</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="dist/css/component-dropzone.css" rel="stylesheet">
 </head>
 <body class="h-100">
@@ -14,12 +14,30 @@
 
 <div id="dropzone" class="dropzone"></div>
 
+<div class="my-4"></div>
+
+<form>
+  <div class="form-group has-success">
+    <label for="validationServer04">Is valid:</label>
+    <div id="dropzone_valid" class="dropzone is-valid"></div>
+  </div>
+</form>
+
+<div class="my-4"></div>
+
+<form>
+  <div class="form-group has-danger">
+    <label for="validationServer04">Is invalid:</label>
+    <div id="dropzone_invalid" class="dropzone is-invalid"></div>
+  </div>
+</form>
+
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="node_modules/dropzone/dist/dropzone.js"></script>
   <script type="text/javascript">
     Dropzone.autoDiscover = false;
@@ -27,6 +45,14 @@
       $("#dropzone").dropzone({
         url: "/file/post",
         dictDefaultMessage: "Drop files here or<br>click to upload..."
+      });
+      $("#dropzone_valid").dropzone({
+        url: "/file/post",
+        dictDefaultMessage: "Files was successfully uploaded..."
+      });
+      $("#dropzone_invalid").dropzone({
+        url: "/file/post",
+        dictDefaultMessage: "There was an error!<br>Please try upload files again..."
       });
     });
   </script>

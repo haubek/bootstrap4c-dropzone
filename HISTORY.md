@@ -1,5 +1,13 @@
 # Release History
 
+## 1.0.6
+
+* Added `is-valid` and `is-invalid` styles
+
+## 1.0.5
+
+* Upgraded to Bootstrap 4.3.1
+
 ## 1.0.4
 
 * Upgraded to Bootstrap 4.1.0
