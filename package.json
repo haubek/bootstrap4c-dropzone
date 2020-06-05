@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "dropzone": "^4.3.0"
+    "dropzone": "^5.7.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
